@@ -13,6 +13,7 @@ pub struct Palette {
     _colors: Vec<Color>,
 }
 
+#[derive(Debug)]
 pub enum NewPaletteError {
     NoColors,
     InvalidData { line_num: usize, val: String },
